@@ -1,24 +1,41 @@
 .main{
     position: absolute;
     width: 500px;
-    height: 500px;
+    height: 570px;
     top: 5%;
     left: 35%;
     
 }
 #formulario{
     padding: 15px;
- 
+    
 }
 fieldset{
-    height: 500px;
+    height: 530px;
+    border-color: cadetblue;
+    background-color: cadetblue;
+    
 }
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    left: -15%;
+}
+#title{
+    background-color: brown;
+    margin-bottom: 10px;
+}
+
 div{
     padding: 5px;
 }
 input{
     width: 250px;
+    
 }
 select{
     width: 250px;
+    height: auto;
+    opacity: 40%;
 }
