@@ -37,3 +37,36 @@ if (rg.length ==  10){
     campoCep.value += '-';
     }
 }
+
+
+
+function validarrg() {
+    var rg = document.getElementById("rg");
+
+    if (rg.value.length == 13) {
+        alert("RG Válido!")
+    } else {
+        alert("RG Inválido!")
+    }
+}
+
+function validarcpf() {
+    var cpf = document.getElementById("cpf");
+
+    if (cpf.value.length == 14) {
+        alert("CPF Válido!")
+    } else {
+        alert("CPF Inválido!")
+    }
+}
+
+
+function validarcep() {
+    var cep = document.getElementById("cep");
+
+    if (cep.value.length == 9) {
+        alert("CEP Válido!")
+    } else {
+        alert("CEP Inválido!")
+    }
+}

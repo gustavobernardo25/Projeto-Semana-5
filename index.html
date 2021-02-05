@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -25,13 +26,13 @@
             </div>
 
             <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="text" id="cpf" value="" oninput="cpfMask()" maxlength="14">
+                <input class="mdl-textfield__input" type="text" id="cpf" value="" onkeyup="cpfMask()" onchange="validarcpf()" maxlength="14">
                 <label class="mdl-textfield__label" for="sample2">CPF...</label>
               
               </div>
 
              <div class="mdl-textfield mdl-js-textfield">
-    <input class="mdl-textfield__input" type="text"  id="rg" oninput="rgMask()" maxlength="13">
+    <input class="mdl-textfield__input" type="text"  id="rg" onkeyup="rgMask()" onchange="validarrg()" maxlength="13">
     <label class="mdl-textfield__label" for="sample2">RG...</label>
   
   </div>
@@ -60,7 +61,7 @@
             </div>
 
             <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="text" id="cep" maxlength="9" onkeyup="cepMask()" >
+                <input class="mdl-textfield__input" type="text" id="cep" maxlength="9" onkeyup="cepMask()" onchange="validarcep()" >
                 <label class="mdl-textfield__label" for="cep" >CEP...</label>
             </div>
 
