@@ -18,10 +18,10 @@
 
     <div class="main">
         <!-- Simple Textfield -->
-        <form action="#">
+        <form action="#" id="formuser">
             <h3>Digite os Dados do Funcionário</h3>
             <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="text" id="nome">
+                <input class="mdl-textfield__input" type="text" id="Nome">
                 <label class="mdl-textfield__label" for="sample1">Nome...</label>
             </div>
 
@@ -61,7 +61,7 @@
             </div>
 
             <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="text" id="cep" maxlength="9" onkeyup="cepMask()" onchange="validarcep()" >
+                <input class="mdl-textfield__input" type="text" id="cep" maxlength="9" onkeyup="cepMask()" onchange="validarcep(); getDadosEnderecoCEP(this.value)"> 
                 <label class="mdl-textfield__label" for="cep" >CEP...</label>
             </div>
 
@@ -99,7 +99,7 @@
             <div>
 
                 
-                <button id="botao">
+                <button id="botao" onclick="validarCampos()">
                     Pronto
                 </button>
             </div>
